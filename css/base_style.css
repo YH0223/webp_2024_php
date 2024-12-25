@@ -1,0 +1,493 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* 최대 크기를 600px로 통일 */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* 세로로만 크기 조절 가능 */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+form-actions {
+    display: flex;
+    justify-content: space-between; /* 두 항목을 양쪽 끝에 배치 */
+    margin-top: 20px;
+}
+
+.form-actions input[type="submit"] {
+    flex: 1; /* 로그인 버튼을 50% 크기로 설정 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+}
+
+.form-actions a {
+    flex: 1; /* 회원가입 링크를 50% 크기로 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+.form-actions a:hover {
+    background-color: #0056b3;
+}
+.form-actions input[type="submit"] {
+    flex: 1; /* 로그인 버튼을 50% 크기로 설정 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+}
+.form-actions input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.form-actions a:hover {
+    background-color: #0056b3;
+}
+
+.form-actions input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #ccc;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"]:hover {
+    background-color: #999;
+}
+
+.register-link, .register-link2, .register-link3 {
+    display: flex;
+    justify-content: space-between; /* 양쪽 끝에 배치 */
+    margin-top: 20px;
+}
+
+.register-link a, .register-link2 a, .register-link3 a {
+    flex: 1; /* 각 링크가 50%씩 차지 */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block; /* inline-block으로 변경 */
+}
+
+.register-link a:hover, .register-link2 a:hover, .register-link3 a:hover {
+    opacity: 0.8;
+    text-decoration: underline; /* 공통 hover 스타일 */
+}
+
+.register-link .btn-primary {
+    background-color: #007BFF;
+    color: white;
+}
+
+.register-link .btn-danger {
+    background-color: #DC3545;
+    color: white;
+}
+
+.register-link2 .btn-primary2 {
+    background-color: #e3fc03;
+    color: rgb(0, 0, 0);
+}
+
+.register-link2 .btn-dange2 {
+    background-color: #00ffff;
+    color: rgb(0, 0, 0);
+}
+
+.register-link3 .btn-primary3 {
+    background-color: #729fb3;
+    color: rgb(255, 255, 255);
+}
+
+.register-link3 .btn-dange3 {
+    background-color: #5ddd3d;
+    color: rgb(255, 255, 255);
+}
+
+.user-info {
+    margin-bottom: 20px;
+}
+
+.user-info p {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+}
+
+strong {
+    color: #555;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+a.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 45%;
+    display: inline-block;
+}
+
+
+a.btn:hover {
+    opacity: 0.8;
+}
+
+/* 게시글 리스트 */
+.board-list {
+    margin-bottom: 20px;
+}
+
+.board-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.board-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.board-item-number {
+    font-weight: bold;
+    color: #949191;
+    font-size: x-small;
+}
+
+.board-item-author {
+    font-weight: bold;
+    color: #558dc5;
+    font-size: x-small;
+    
+}
+
+.board-item-body {
+    padding: 10px 0;
+}
+
+.board-item-title {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.board-item-title:hover {
+    text-decoration: underline;
+}
+
+.board-item-meta {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* 페이지네이션 */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-links {
+    display: flex;
+    gap: 10px;
+}
+.board-item-image {
+    width: 18px; /* 이미지 크기 */
+    height: 18px;
+    vertical-align: middle; /* 이미지가 텍스트와 동일한 높이로 정렬 */
+}
+.pagination .btn {
+    padding: 5px 15px;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+}
+
+.pagination .btn:hover {
+    background-color: #0056b3;
+}
+
+.pagination .btn-prev {
+    background-color: #007BFF;
+}
+
+.pagination .btn-next {
+    background-color: #007BFF;
+}
+
+/* 글쓰기와 메인 페이지로 버튼 */
+.action-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.action-links .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.action-links .btn-primary {
+    background-color: #007BFF;
+    color: white;
+}
+
+.action-links .btn-secondary {
+    background-color: #ccc;
+    color: white;
+}
+
+.action-links .btn:hover {
+    opacity: 0.8;
+}
+/* 상세 글 내용 스타일 */
+.board-details .detail-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.board-details .detail-item strong {
+    color: #333;
+}
+
+/* 이미지를 작게 보이도록 */
+.post-image {
+    max-width: 300px; /* 이미지 크기 최대 300px */
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* 버튼 스타일 */
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    transition: background-color 0.3s ease;
+}
+
+.button-group .btn:hover {
+    background-color: #0056b3;
+}
+
+.button-group .btn-primary {
+    background-color: #007BFF;
+}
+
+.button-group .btn-danger {
+    background-color: #dc3545;
+}
+
+.button-group .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.button-group .btn-danger:hover {
+    background-color: #c82333;
+}
+.content-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+.delete-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+/* 삭제 페이지 스타일 */
+.delete-container h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.delete-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.delete-container .content {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* 버튼을 감싸는 div 스타일 */
+.buttons {
+    display: flex;
+    justify-content: space-between; /* 두 버튼을 양쪽 끝에 배치 */
+    gap: 10px; /* 버튼 간격 */
+}
+
+/* 삭제 버튼 스타일 */
+.button_delete {
+    padding: 12px 20px; /* 버튼 크기 */
+    background-color: #dc3545; /* 빨간색 배경 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 48%; /* 버튼의 너비를 50%로 설정 */
+}
+
+/* 취소 버튼 스타일 */
+.button_xde {
+    padding: 12px 20px; /* 버튼 크기 */
+    background-color: #6c757d; /* 회색 배경 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 48%; /* 버튼의 너비를 50%로 설정 */
+}
+
+/* 버튼 호버 시 색상 변화 및 크기 효과 */
+.button_delete:hover {
+    background-color: #c82333; /* 호버 시 빨간색 배경 변화 */
+    transform: scale(1.05); /* 호버 시 버튼 크기 커짐 */
+}
+
+.button_xde:hover {
+    background-color: #5a6268; /* 호버 시 회색 배경 변화 */
+    transform: scale(1.05); /* 호버 시 버튼 크기 커짐 */
+}
